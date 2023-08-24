@@ -56,8 +56,8 @@ https://github.com/max-andr/joint-cnn-mrf
 We tried to implement the model as described in the paper as SDNN using lava-dl. However, we are not sure if we got it right. The model is implemented in `dhp19_sdnn_model.py`.
 
 # Training
-The model is trained using the `dhp19_sdnn_train.py` script. It will traine the SDNN version of the Model described above. The training script stores model Input/Output samples every 5 epochs in `results/train/experiemen_name/plots`.
-The model is exported  as hdf5 network to `results/train/experiemen_name/trained_model.net` after training. It is/should be supported by `lava.lib.dl.netx` to automatically load the network as a lava process.
+The model is trained using the `dhp19_sdnn_train.py` script. It will traine the SDNN version of the Model described above. The training script stores model Input/Output samples every 5 epochs in `results/train/experiment_name/plots`.
+The model is exported  as hdf5 network to `results/train/experiment_name/trained_model.net` after training. It is/should be supported by `lava.lib.dl.netx` to automatically load the network as a lava process.
 
 
 ## Training progress
