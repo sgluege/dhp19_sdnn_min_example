@@ -7,7 +7,7 @@ Download the sample data at https://drive.switch.ch/index.php/s/9aICDpDuVmoH4Bs 
 ## Data format
 
 ### Inputs / Event frames
-A single input is an event frame of 260x344 pixels. Each scene was recored from 4 cameras. We present 8 cosecutive event frames to the SDNN. With a batch size of 8, the input shape is thus `[8, 1, 260, 344, 4, 8]`: 8 batches, 1 channel, 260x344 pixels, 4 cameras, 8 time steps.
+A single input is an event frame of 260x344 pixels. Each scene was recored from 4 cameras. We present 8 consecutive event frames to the SDNN. With a batch size of 8, the input shape is thus `[8, 1, 260, 344, 4, 8]`: 8 batches, 1 channel, 260x344 pixels, 4 cameras, 8 time steps.
 
 During training (yet) we chose a single camera to train on. Thus, the input to the model is `[8, 1, 260, 344, 8]`: 8 batches, 1 channel, 260x344 pixels, 8 time steps.
 ```
@@ -15,7 +15,7 @@ input.shape()   # torch.Size([8, 1, 260, 344, 4, 8])
 ```
 
 ### Targets / Labels
-The target for each joint is a single frame of 260x344 pixels. We have labels for 13 joints. We present 8 cosecutive event frames to the SDNN. With a batch size of 8, the target shape is thus `[8, 13, 260, 344, 4, 8]`: 8 batches, 13 channels/joints, 260x344 pixels, 4 cameras, 8 time steps.
+The target for each joint is a single frame of 260x344 pixels. We have labels for 13 joints. We present 8 consecutive event frames to the SDNN. With a batch size of 8, the target shape is thus `[8, 13, 260, 344, 4, 8]`: 8 batches, 13 channels/joints, 260x344 pixels, 4 cameras, 8 time steps.
 
 During training (yet) we chose a single camera to train on. Thus, the target for the model is `[8, 13, 260, 344, 8]`: 8 batches, 13 channels/joints, 260x344 pixels, 8 time steps.
 
@@ -63,7 +63,10 @@ The model is exported  as hdf5 network to `results/train/experiemen_name/trained
 ## Training progress
 ![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep0.png "Input/Output sample after first epoch of training")
 ![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep25.png "Input/Output sample after 5 epoch of training")
-![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep15.png "Input/Output sample after 5 epoch of training")
+
+![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep50.png "Input/Output sample after 5 epoch of training")
+
+![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep75.png "Input/Output sample after 5 epoch of training")
 
 ![Training Loss ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/train_loss.png "Training Loss")
 
@@ -71,7 +74,3 @@ The model is exported  as hdf5 network to `results/train/experiemen_name/trained
 
 See the SDNN Example in the lava-dl tutorial https://github.com/lava-nc/lava-dl/blob/main/tutorials/lava/lib/dl/netx/pilotnet_sdnn/run.ipynb to get started.
 
-
-
-
-```
