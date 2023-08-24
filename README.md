@@ -61,12 +61,16 @@ The model is exported  as hdf5 network to `results/train/experiemen_name/trained
 
 
 ## Training progress
-![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep0.png "Input/Output sample after first epoch of training")
-![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep25.png "Input/Output sample after 5 epoch of training")
+![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep0.png "Output sample after first epoch of training")
+![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep25.png "Output sample after 25 epoch of training")
 
-![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep50.png "Input/Output sample after 5 epoch of training")
+![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep50.png "Output sample after 50 epoch of training")
 
-![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep75.png "Input/Output sample after 5 epoch of training")
+![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_ep75.png "Output sample after 75 epoch of training")
+
+
+![Sample output/input ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/net_output_over_input_ep95.png "Input/Output sample after 95 epoch of training")
+
 
 ![Training Loss ](results/train/dhp19_sdnn_epochs100_lr0.0001_batchsize8_seq8_cam1_lam0/plots/train_loss.png "Training Loss")
 
