@@ -351,7 +351,6 @@ for epoch in range(num_epochs):
         plt_title = f'Output sample after epoch {epoch} from\n sample {sample_idx}, time {time_idx}, target joint {joint_idx}'
         plt_filename = f'net_output_ep{epoch}.png'
         plt_path = act_result_path + 'plots/' + plt_filename
-        # plot_net_output(output.detach().cpu(), sample_idx=sample_idx, time_idx=time_idx, joint_idx=joint_idx, plt_title=plt_title)   
         plot_net_output(output.detach().cpu(), sample_idx=sample_idx, time_idx=time_idx, joint_idx=joint_idx, plt_title=plt_title, path=plt_path)  
         
         plt_title = f'Input/Output sample after epoch {epoch} from\n sample {sample_idx}, time {time_idx}, target joint {joint_idx}'
@@ -376,7 +375,6 @@ for epoch in range(num_epochs):
         plt.savefig(plt_filename)
         plt.close()
         # plt.show()
-
 
     # store loss every epoch
     epoch_loss = running_loss #/ dhp19_dataset.__len__()
